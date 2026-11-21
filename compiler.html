@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CS25CO1 | Online C Programming Lab</title>
+<style>
+:root{--g:#176b45;--d:#104b32;--line:#dce7df}*{box-sizing:border-box}
+body{margin:0;background:#f5f8f6;color:#203128;font:15px/1.55 Arial,sans-serif}
+header{background:linear-gradient(120deg,var(--d),#218154);color:white;padding:20px max(18px,calc((100% - 1180px)/2))}
+header p{margin:2px 0;color:#e6f3e9}header h1{margin:9px 0 3px;font-size:clamp(23px,3vw,32px)}
+nav,main{max-width:1180px;margin:16px auto;padding:0 18px}nav a{color:var(--g);text-decoration:none;font-weight:bold}
+.panel{background:white;border:1px solid var(--line);border-radius:12px;padding:17px 19px;margin-bottom:14px}
+h2,h3{color:var(--d);margin-top:0}.notice{background:#fff8e8;border:1px solid #f0dfb7;border-radius:9px;padding:11px 13px;color:#6b5423;font-size:13px;margin-top:12px}
+iframe{display:block;width:100%;height:850px;border:1px solid var(--line);border-radius:10px;background:white}
+.actions{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
+.button{display:inline-block;background:var(--g);color:white;text-decoration:none;padding:10px 14px;border-radius:8px;font-weight:bold}
+.small{font-size:12px;color:#627168}li{margin:6px 0}
+@media(max-width:700px){iframe{height:780px}}
+footer{text-align:center;color:#627168;font-size:12px;padding:20px;background:white;border-top:1px solid var(--line)}
+</style></head><body>
+<header><p><strong>R.V.S. College of Engineering, Dindigul</strong></p><p>Department of Artificial Intelligence and Data Science</p>
+<h1>CS25CO1 – Online C Programming Lab</h1><p>Write • Compile • Run • Learn</p></header>
+<nav><a href="index.html">← Back to Project Portal</a></nav>
+<main>
+<section class="panel"><h2>Your browser-based C programming workspace</h2>
+<p>Write a C program, provide input before execution, compile it, and inspect program output or compiler diagnostics. The embedded compiler uses WebAssembly in the browser; your source code is not sent to a remote compilation server by this compiler engine.</p>
+<div class="notice"><strong>First visit:</strong> The compiler toolchain is approximately 23 MB compressed and may take a little time to load. The browser can cache it for later visits. An internet connection is needed for the initial download.</div></section>
+<section class="panel">
+<div class="actions"><strong>Online C Compiler</strong><a class="button" href="https://senolgulgonul.github.io/derle/" target="_blank" rel="noopener">Open compiler in a new tab ↗</a></div>
+<iframe title="Browser-based C compiler" src="https://senolgulgonul.github.io/derle/" loading="eager"></iframe>
+<p class="small">If the compiler does not appear here, use “Open compiler in a new tab”. Browser or hosting security settings may prevent embedding.</p>
+</section>
+<section class="panel"><h3>How to provide input to your C program</h3><ol>
+<li>Write your program using functions such as <code>scanf()</code> to read values.</li>
+<li>Locate the compiler's <strong>Input (stdin)</strong> box.</li>
+<li>Enter values before running. For <code>scanf("%d %d", &amp;a, &amp;b)</code>, you can enter <code>10 20</code>.</li>
+<li>For multiple inputs, separate values with spaces or put them on separate lines, as your program expects.</li>
+<li>Press Compile/Run and check the Console for output or errors.</li></ol></section>
+<section class="panel"><h3>Important notes for students</h3><ul>
+<li>This first version is intended for introductory, single-file C programs.</li>
+<li>The compiler engine uses Clang/WebAssembly, not the GCC compiler installed in the college lab.</li>
+<li>Programs depending on operating-system-specific features, external libraries, networking, or multiple source files may not work in this version.</li>
+<li>Save a copy of your source code regularly. Do not treat the browser editor as your only storage location.</li></ul></section>
+<p class="small">Compiler engine attribution: Derle by Şenol Gülgönül. Its project describes an in-browser Clang 18.1.2 + LLD toolchain and WASI input/output support. See <a href="https://github.com/senolgulgonul/derle" target="_blank" rel="noopener">the project repository and licence notes</a>. This departmental page provides the portal integration and student guidance; the compiler engine is independently maintained.</p>
+</main><footer>CS25CO1 – Programming in C<br>Department of Artificial Intelligence and Data Science<br>R.V.S. College of Engineering, Dindigul</footer></body></html>
